@@ -17,6 +17,7 @@ public class mouse_act {
 		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		Actions act=new Actions(d);
 		act.moveToElement(d.findElement(By.xpath("//*[@id=\"nav1\"]/li[4]/a"))).perform();
+		System.out.println("done");
 		
 	
 		
