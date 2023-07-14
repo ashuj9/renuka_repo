@@ -13,7 +13,6 @@ public class table_handle {
 			WebDriver d=new ChromeDriver();
 			d.manage().window().maximize();
 			d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-			d.get("https://www.seleniumpractise.blogspot.com");
 			
 
 	}
