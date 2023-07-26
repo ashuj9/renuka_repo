@@ -3,10 +3,10 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>playwright</groupId>
-  <artifactId>playwright</artifactId>
+  <groupId>Playwright1</groupId>
+  <artifactId>Playwright1</artifactId>
   <version>0.1-SNAPSHOT</version>
-  <name>Playwright</name>
+  <name>Playwright1</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
@@ -15,6 +15,11 @@
       <groupId>com.microsoft.playwright</groupId>
       <artifactId>playwright</artifactId>
       <version>1.35.1</version>
+    </dependency>
+    <dependency>
+    	<groupId>playwright</groupId>
+    	<artifactId>playwright</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <build>
