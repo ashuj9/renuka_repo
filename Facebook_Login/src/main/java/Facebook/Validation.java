@@ -1,11 +1,9 @@
-package Fb_tc;
+package Facebook;
 
 import org.openqa.selenium.WebElement;
 
-import orange_hrm.Driver;
 
-
-public class Validation extends Driver1
+public class Validation extends Driver
 {
 	 
  public static void loginPage(WebElement logo) throws Exception 

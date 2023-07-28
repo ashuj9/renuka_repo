@@ -1,9 +1,9 @@
-package Fb_tc;
+package Facebook;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class Login extends Driver1
+public class Login extends Driver
 {
 	
 	 static By usrnam=By.xpath("//*[@id='email']");

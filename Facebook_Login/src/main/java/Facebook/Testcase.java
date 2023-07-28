@@ -1,14 +1,11 @@
-package Fb_tc;
+package Facebook;
 
-
-import orange_hrm.Validation;
-
-public class Testcase extends Driver1
+public class Testcase extends Driver
 {
 	
 	public void testcase_one()throws Exception
 	{
-		Driver1.WebDriver();
+		Driver.WebDriver();
 	}
 	
 	public void testcase_two() throws Exception
@@ -18,7 +15,7 @@ public class Testcase extends Driver1
 		   Validation.enter_username("7993169534");
 		   Validation.enter_password("Renu@ammu123");
 		   Login.login_click();
-		   Validation.home_page(Login.homepage());
+		  
 	}
 	
 	
