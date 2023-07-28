@@ -1,0 +1,10 @@
+package Playwright_Scripts;
+
+public class logging_orangehrm {
+
+	public static void main(String[] args) {
+
+
+	}
+
+}

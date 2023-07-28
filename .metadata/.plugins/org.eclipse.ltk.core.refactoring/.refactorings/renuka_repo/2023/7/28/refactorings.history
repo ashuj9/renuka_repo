@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;renuka_repo.js_excecutor&apos; to &apos;table_handle&apos;&#x0D;&#x0A;- Original project: &apos;renuka_repo&apos;&#x0D;&#x0A;- Original element: &apos;renuka_repo.js_excecutor&apos;&#x0D;&#x0A;- Renamed element: &apos;renuka_repo.table_handle&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;js_excecutor&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;renuka_repo{js_excecutor.java[js_excecutor" matchStrategy="1" name="table_handle" qualified="false" references="true" similarDeclarations="false" stamp="1689321172246" textual="false" version="1.0"/>
+</session>

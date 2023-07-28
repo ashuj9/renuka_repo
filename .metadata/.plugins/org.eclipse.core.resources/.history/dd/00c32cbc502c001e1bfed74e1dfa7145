@@ -1,0 +1,12 @@
+package Playwright_Scripts;
+
+import com.microsoft.playwright.Playwright;
+
+public class screenshot {
+
+	public static void main(String[] args) {
+	Playwright p=Playwright.create();
+
+	}
+
+}

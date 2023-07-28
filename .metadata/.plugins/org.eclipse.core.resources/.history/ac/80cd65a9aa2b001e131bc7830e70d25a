@@ -1,0 +1,118 @@
+package orange_hrm;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class Testcase extends Driver{
+	
+	@BeforeMethod
+	public static  void test_case1_login_page() throws Exception
+	   {
+		   Driver.WebDriver();
+		  // Validation.loginPage(Login_page.login1());
+		  
+	   }
+	
+	  @Test
+	   public static  void test_case_2_valid_user_name_valid_password() throws Exception
+	   {
+		   
+		   
+		   Login_page.username_click("Admin");
+		   Login_page.password_click("admin123");
+		   Validation.enter_username("Admin");
+		   Validation.enter_password("admin123");
+		   Login_page.login_click();
+		   Validation.home_page(Login_page.home_page());
+		  
+	   }
+	  @Test
+	   public static  void test_case_3_invalid_username_valid_password() throws Exception
+	   {
+
+		   
+		  
+		   Login_page.username_click("Admi");
+		   Login_page.password_click("admin123"); 
+		   Validation.enter_username("Admi");
+		   Validation.enter_password("admin123");
+		   Login_page.login_click();
+		   Validation.invalid_usnmvalid_pswd(Login_page.invalidUN_valid_pswd());
+		 
+	   }
+	  @Test
+	   public static  void test_case_4_valid_username_invalid_password() throws Exception
+	   {
+
+		   
+		  
+		   Login_page.username_click("Admin");
+		   Login_page.password_click("admin1"); 
+		   Validation.enter_username("Admin");
+		   Validation.enter_password("admin1");
+		   Login_page.login_click();
+		   Validation.invalid_usnmvalid_pswd(Login_page.invalidUN_valid_pswd());
+		   Validation.valid_usnm_invalid_pswd(Login_page.valid_usnm_invalid_password());
+		  
+	   }
+	  @Test
+	   public static  void test_case_5_emptyusername_validpswd() throws Exception
+	   {
+
+		   
+		  
+		   Login_page.username_click("");
+		   Login_page.password_click("admin123"); 
+		   Validation.enter_username("");
+		   Validation.enter_password("admin123");
+		   Login_page.login_click();
+		  // Validation.invalid_usnmvalid_pswd(Login_page.invalidUN_valid_pswd());
+		  // Validation.valid_usnm_invalid_pswd(Login_page.valid_usnm_invalid_password());
+		   Validation.emptyusername_validpassword(Login_page.empty_usnm_valid_pswd());
+		   
+	   }
+	  @Test
+	   public static  void test_case_6_validusername_emptypswd() throws Exception
+	   {
+
+		  
+		  
+		   Login_page.username_click("Admin");
+		   Login_page.password_click(""); 
+		   Validation.enter_username("Admin");
+		   Validation.enter_password("");
+		   Login_page.login_click();
+		//   Validation.invalid_usnmvalid_pswd(Login_page.invalidUN1());
+		  // Validation.valid_usnm_invalid_pswd(Login_page.invalid_password());
+		   Validation.validusername_emptypassword(Login_page.valid_usnm_emptyPswd());
+		   
+	   }
+	  @Test
+	   public  static void test_case_7_emptyusername_emptypswd() throws Exception
+	   {
+
+		  
+		  
+		   Login_page.username_click("");
+		   Login_page.password_click(""); 
+		   Validation.enter_username("");
+		   Validation.enter_password("");
+		   Login_page.login_click();
+		   Validation.emptyusername_emptypassword(Login_page.empty_usnm_empty_pswd());
+		  
+	   }
+	  @Test
+	   public static  void test_case_8_invalidUserName_invalidPassword() throws Exception
+	   {
+		  
+			  
+		   Login_page.username_click("Adm");
+		   Login_page.password_click("Adm1"); 
+		   Validation.enter_username("Adm");
+		   Validation.enter_password("Adm1");
+		   Login_page.login_click();
+		   Validation.invalid_usnm_invalid_pswd(Login_page.invalid_usnm_invalid_pswd());
+		   
+	   }
+	   
+}

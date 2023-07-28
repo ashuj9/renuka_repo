@@ -1,0 +1,70 @@
+package fb_tcs;
+
+
+
+
+import Facebook.Driver;
+import Facebook.Login;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+
+public class fb {
+	
+	@Given("URL : {string}")
+	public void url(String string) {
+        System.out.println("Url id enterde sucessfully");
+	}
+
+	@Then("On search FaceBook Login page should be displayed")
+	public void on_search_face_book_login_page_should_be_displayed() {
+	   Driver.WebDriver();
+	   System.out.println("Facebook login page should be dispalyed");
+	}
+
+	@Given("username {string}")
+	public void username(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("username entered succesfully")
+	public void username_entered_succesfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("password {string}")
+	public void password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("password entered successfully")
+	public void password_entered_successfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("click Login Button")
+	public void click_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("FaceBook home page should be displayed")
+	public void face_book_home_page_should_be_displayed() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("{string} should be shown")
+	public void should_be_shown(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+	
+
+}

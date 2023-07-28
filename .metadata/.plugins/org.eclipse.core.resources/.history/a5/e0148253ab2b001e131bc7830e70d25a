@@ -1,0 +1,54 @@
+package cucumber;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import orange_hrm.Driver;
+
+public class orangehrm {
+
+	@Given("Url: {string}")
+	public void url(String string) {
+	    
+	   Driver.WebDriver();
+	}
+
+	@Then("orangeHrm login page is opened sucessfully")
+	public void orange_hrm_login_page_is_opened_sucessfully() {
+	    
+	}
+
+	@Given("valid UserName {string}")
+	public void valid_user_name(String string) {
+	    
+	}
+
+	@Then("UserName entered sucessfully")
+	public void user_name_entered_sucessfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("valid Password {string}")
+	public void valid_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Password entered sucessfully")
+	public void password_entered_sucessfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("click on login button")
+	public void click_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("dashboard page is displayed sucessfully")
+	public void dashboard_page_is_displayed_sucessfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+}

@@ -1,0 +1,18 @@
+package Playwright_Scripts;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType.LaunchOptions;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
+public class screenshot {
+
+	public static void main(String[] args) {
+	Playwright p=Playwright.create();
+	Browser b=p.chromium().launch(new LaunchOptions());
+	Page pg=b.newPage();
+	pg.navigate("https://playwright.dev/java/docs/screenshotss");
+
+	}
+
+}

@@ -1,0 +1,58 @@
+package cucumber;
+
+public class orangehrm {
+
+	public static void main(String[] args) {
+		@Given("Url: {string}")
+		public void url(String string) {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("orangeHrm login page is opened sucessfully")
+		public void orange_hrm_login_page_is_opened_sucessfully() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Given("valid UserName {string}")
+		public void valid_user_name(String string) {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("UserName entered sucessfully")
+		public void user_name_entered_sucessfully() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Given("valid Password {string}")
+		public void valid_password(String string) {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("Password entered sucessfully")
+		public void password_entered_sucessfully() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("click on login button")
+		public void click_on_login_button() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+		@Then("dashboard page is displayed sucessfully")
+		public void dashboard_page_is_displayed_sucessfully() {
+		    // Write code here that turns the phrase above into concrete actions
+		    throw new io.cucumber.java.PendingException();
+		}
+
+
+
+	}
+
+}

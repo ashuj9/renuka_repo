@@ -1,0 +1,38 @@
+package Fb_tc;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class Login extends Driver
+{
+	
+	 static By usrnam=By.xpath("//*[@id='email']");
+	 static By passwd=By.xpath("//*[@type='password']");
+	 static By login_xpath=By.xpath("//*[@type='submit']");
+	  
+	 public static WebElement username()
+	 {
+	 WebElement username=d.findElement(usrnam);
+	 return username;
+	 }
+	 public static WebElement password()
+	 {
+	 WebElement password=d.findElement(passwd);
+	 return password;
+	 }
+	 public static WebElement login()
+	 {
+	 WebElement login=d.findElement(login_xpath);
+	 return login;
+	 }
+	 public static void  username_click(WebElement username)
+	 {
+		 
+	 }
+	
+	
+	
+	
+	
+
+}

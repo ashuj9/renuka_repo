@@ -1,0 +1,25 @@
+package Fb_tc;
+
+import orange_hrm.Login_page;
+import orange_hrm.Validation;
+
+public class Testcase extends Driver
+{
+	
+	public void testcase_one()throws Exception
+	{
+		Driver.WebDriver();
+	}
+	public void testcase_two() throws Exception
+	{
+		 Login_page.username_click("Admin");
+		   Login_page.password_click("admin123");
+		   Validation.enter_username("Admin");
+		   Validation.enter_password("admin123");
+		   Login_page.login_click();
+		   Validation.home_page(Login_page.home_page());
+	}
+	
+	
+
+}

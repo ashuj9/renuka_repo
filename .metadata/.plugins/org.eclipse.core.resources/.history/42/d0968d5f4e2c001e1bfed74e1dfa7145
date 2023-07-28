@@ -1,0 +1,10 @@
+package Playwright_Scripts;
+
+public class Taking_screenshot {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

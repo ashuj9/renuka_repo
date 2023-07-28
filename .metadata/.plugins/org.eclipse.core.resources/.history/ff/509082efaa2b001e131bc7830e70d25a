@@ -1,0 +1,100 @@
+package orange_hrm;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class Login_page extends Driver{
+	static By login_xpath=By.xpath("//h5[text()='Login']");
+    static By userName_xpath=By.xpath("//input[@name='username']");
+    static By password_xpath=By.xpath("//input[@name='password']");
+    static By login_btn_xpath=By.xpath("//button[text()=' Login ']");
+    static By dashboard_homepage_xpath=By.xpath("//h6[text()='Dashboard']");
+    
+    static By invalidUN_validpswd_xpath=By.xpath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']");
+    static By vusnm_invalidpswd_xpath=By.xpath("//p[@class='oxd-text oxd-text--p oxd-alert-content-text']");
+    static By empty_usnm_valid_pswd_xpath=By.xpath("//span[text()='Required']");
+   static By valid_usnm_emptyPW_xpath=By.xpath("//span[text()='Required']");
+    static By empty_usnm_empty_pswd=By.xpath("//span[text()='Required']");
+   static By invalid_usnm_invalid_pswd=By.xpath("//p[text()='Invalid credentials']");
+    
+    public static WebElement login1()
+    {
+    	WebElement login1=d.findElement(login_xpath);
+    	return login1;
+    }
+    public static WebElement username_web()
+    {
+    	WebElement userName1=d.findElement(userName_xpath);
+    	return userName1;
+    }
+    public static WebElement password1()
+    {
+    	WebElement password1=d.findElement(password_xpath);
+    	return password1;
+    }
+    public static WebElement login_btn1()
+    {
+    	WebElement login_btn1=d.findElement(login_btn_xpath);
+    	return login_btn1;
+    }
+    public static WebElement home_page()
+    {
+    	WebElement homepage=d.findElement(dashboard_homepage_xpath);
+    	return homepage;
+    }
+    
+    public static WebElement invalidUN_valid_pswd()
+    {
+    	WebElement invalidUN1=d.findElement(invalidUN_validpswd_xpath);
+    	return invalidUN1;
+    }
+    public static WebElement valid_usnm_invalid_password()
+    {
+    	WebElement invalid_password=d.findElement(vusnm_invalidpswd_xpath);
+    	return invalid_password;
+    }
+    public static WebElement empty_usnm_valid_pswd()
+    {
+    	WebElement empty_usnm_valid_pswd=d.findElement(empty_usnm_valid_pswd_xpath);
+    	return empty_usnm_valid_pswd;
+    }
+  public static WebElement valid_usnm_emptyPswd()
+  {
+  	WebElement emptyPW1=d.findElement(valid_usnm_emptyPW_xpath);
+  	return emptyPW1;
+  }
+ 
+    public static WebElement empty_usnm_empty_pswd()
+    {
+    	WebElement emptyUsnm_emptyPswd=d.findElement(empty_usnm_empty_pswd);
+    	return emptyUsnm_emptyPswd;
+    }
+    
+    public static WebElement invalid_usnm_invalid_pswd()
+    {
+    	WebElement invalidUsnm_invalidPswd=d.findElement(invalid_usnm_invalid_pswd);
+    	return invalidUsnm_invalidPswd;
+    }
+    
+    
+ 
+//    //performing actions
+    public static void username_click(String username)
+    {
+    	username_web().click();
+    	username_web().sendKeys(username);
+    }
+    
+    public static void password_click(String password)
+    {
+    	password1().click();
+    	password1().sendKeys(password);
+    }
+    
+    public static void login_click()
+    {
+    	login_btn1().click();
+    	
+    }
+    
+}

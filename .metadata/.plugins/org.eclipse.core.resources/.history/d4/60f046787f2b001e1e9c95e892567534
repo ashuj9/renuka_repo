@@ -1,0 +1,12 @@
+package Playwright_Scripts;
+
+import com.microsoft.playwright.Playwright;
+
+public class locators {
+
+	public static void main(String[] args) {
+		Playwright p=Playwright.create();
+
+	}
+
+}

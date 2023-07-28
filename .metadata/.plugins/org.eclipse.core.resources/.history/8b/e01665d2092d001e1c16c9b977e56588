@@ -1,0 +1,42 @@
+
+public class Facebook {
+	
+	@Given("valid UserName {string}")
+	public void valid_user_name(String string) {
+	    
+	}
+
+	@Then("UserName entered sucessfully")
+	public void user_name_entered_sucessfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Given("valid Password {string}")
+	public void valid_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("Password entered sucessfully")
+	public void password_entered_sucessfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("click on login button")
+	public void click_on_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("dashboard page is displayed sucessfully")
+	public void dashboard_page_is_displayed_sucessfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+	
+}

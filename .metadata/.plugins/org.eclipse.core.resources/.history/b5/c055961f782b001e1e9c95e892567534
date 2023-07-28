@@ -1,0 +1,18 @@
+package Playwright_Scripts;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
+public class first_pogram {
+
+	public static void main(String args[])
+	{
+		Playwright pl=Playwright.create();
+		Browser b= pl.chromium().launch();
+		Page pg=b.newPage();
+		pg.navigate("https://www.amazon.com");
+		
+	}
+
+}

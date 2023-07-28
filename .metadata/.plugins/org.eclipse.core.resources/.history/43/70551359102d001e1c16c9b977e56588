@@ -1,0 +1,7 @@
+Feature: Login page
+
+Background:Open Login page
+
+Given URL : "https://www.facebook.com/login.php"
+
+Then On search FaceBook Login page should be displayed

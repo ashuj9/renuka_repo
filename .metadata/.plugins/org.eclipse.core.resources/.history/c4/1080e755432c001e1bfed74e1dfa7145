@@ -1,0 +1,28 @@
+package Playwright_Scripts;
+
+import java.nio.file.Paths;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Locator;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
+public class Taking_screenshot {
+
+	public static void main(String[] args) {
+		Playwright p=Playwright.create();
+		Browser b= p.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+		Page pg=b.newPage();
+		pg.navigate("https://www.amazon.com");
+		pg.screenshot(new Page.ScreenshotOptions()
+				  .setPath(Paths.get("screenshot.png"))
+				  .setFullPage(true));
+		
+		
+		
+		pg.locator(".header").screenshot(new Locator.ScreenshotOptions().setPath(Paths.get("screenshot.png")))
+
+	}
+
+}

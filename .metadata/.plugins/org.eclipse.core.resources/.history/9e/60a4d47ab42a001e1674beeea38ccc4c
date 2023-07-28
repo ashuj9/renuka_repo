@@ -1,0 +1,34 @@
+package renuka_repo;
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class alerts {
+
+	public static void main(String[] args) throws Exception
+	{
+		WebDriver d=new ChromeDriver();
+		d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		d.manage().window().maximize();
+		d.get("https://www.hyrtutorials.com/p/alertsdemo.html");
+		//alert box
+		System.out.println(d.findElement(By.xpath("//div[@id='output']")).getText());
+		d.findElement(By.xpath("//button[@id='alertBox']")).click();
+	   System.out.println(d.switchTo().alert().getText());
+		d.switchTo().alert().accept();
+		
+		
+		//confirm box
+		
+		System.out.println(d.findElement(By.xpath("//div[@id='output']")).getText());
+		d.findElement(By.id("confirmBox")).click();
+	    System.out.println(d.switchTo().alert().getText());
+		d.switchTo().alert().accept();
+		
+
+	}
+
+}

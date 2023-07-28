@@ -1,0 +1,21 @@
+package Playwright_Scripts;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Playwright;
+
+public class logging_orangehrm {
+
+	public static void main(String[] args) {
+
+		Playwright pl=Playwright.create();
+		Browser b= pl.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+		Page pg=b.newPage();
+		pg.navigate("hhttps://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		
+
+
+	}
+
+}

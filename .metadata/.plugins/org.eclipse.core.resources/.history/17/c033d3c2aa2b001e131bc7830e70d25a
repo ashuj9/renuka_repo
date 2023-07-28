@@ -1,0 +1,148 @@
+package orange_hrm;
+
+import org.junit.Assert;
+import org.openqa.selenium.WebElement;
+
+
+
+public class Validation extends Driver
+{
+	public static void loginPage(WebElement logo) throws Exception 
+	{
+		if(!(logo.isDisplayed()))
+		{
+			throw new Exception("login page not displayed");
+		}
+		else
+		{
+			System.out.println("login page is displayed");
+		}
+		
+	}
+	
+	
+	public static void enter_username(String username) throws Exception
+	{
+		
+		if(!(username.equals(Login_page.username_web().getAttribute("value"))))		{
+			throw new Exception ("username  not displayed ");
+		}
+		else
+		{
+			System.out.println("username entered succefully");
+		}
+	}
+//	public static void enter_username(String username) throws Exception
+//	{
+//	Assert.assertEquals(Login_page.username_web().getAttribute("value"), username,"username  not displayed ");
+//	}
+	
+	
+	
+	
+		public static void enter_password(String password) throws Exception
+	{
+		if(!(password.equals(Login_page.password1().getAttribute("value"))))
+		{
+			throw new Exception("password not displayed");
+		}
+		else
+		{
+			System.out.println("password entered sucessfully");		}
+	}
+	
+//	public static void enter_password(String password) throws Exception
+//	{
+//	Assert.assertEquals((Login_page.password1().getAttribute("value")), password,"password not displayed");
+//	}
+//	
+	
+	
+	
+	
+	public static void home_page(WebElement homepage) throws Exception
+	{
+		if(!(homepage.isDisplayed()))
+		{
+			throw new Exception("dashboard page not opened");
+		}
+		else
+		{
+			System.out.println("dashboard page opened sucessfully");
+		}
+	}
+	public static void invalid_usnmvalid_pswd(WebElement invalid_user_name_valid_password) throws Exception
+	{
+		if(!(invalid_user_name_valid_password.isDisplayed()))
+		{
+			throw new Exception("invalid credentials not displayed");
+		}
+		else
+		{
+			System.out.println("invalid credentials displayed sucessfully");
+		}
+	}
+	
+	
+	
+	public static void valid_usnm_invalid_pswd(WebElement valid_user_name_invalid_password) throws Exception
+	{
+		if(!(valid_user_name_invalid_password.isDisplayed()))
+		{
+			throw new Exception("invalid password credentials not displayed");
+		}
+		else
+		{
+			System.out.println("invalid password credentials displayed sucessfully");
+		}
+	}
+	
+	public static void emptyusername_validpassword(WebElement EmptyUsnmValidPswd) throws Exception
+	{
+		if(!(EmptyUsnmValidPswd.isDisplayed()))
+		{
+			throw new Exception("empty username required not displayed");
+		}
+		else
+		{
+			System.out.println("empty username required displayed sucessfully");
+		}
+	}
+	
+	public static void validusername_emptypassword(WebElement validUserName_emptyPassword) throws Exception
+	{
+		if(!(validUserName_emptyPassword.isDisplayed()))
+		{
+			throw new Exception("empty password required not displayed");
+		}
+		else
+		{
+			System.out.println("empty password required displayed sucessfully");
+		}
+	}
+	
+	public static void emptyusername_emptypassword(WebElement emptyUserName_emptyPassword) throws Exception
+	{
+		if(!(emptyUserName_emptyPassword.isDisplayed()))
+		{
+			throw new Exception("empty username empty password required not displayed");
+		}
+		else
+		{
+			System.out.println("empty username empty password required displayed sucessfully");
+		}
+	}
+	
+	public static void invalid_usnm_invalid_pswd(WebElement InvalidUserName_InvalidPassword) throws Exception
+	{
+		if(!(InvalidUserName_InvalidPassword.isDisplayed()))
+		{
+			throw new Exception("invalid credentials of invalid username invalid password  not displayed");
+		}
+		else
+		{
+			System.out.println("invalid credentials of invalid username invalid password displayed sucessfully");
+		}
+	}
+	
+}

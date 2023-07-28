@@ -1,0 +1,19 @@
+package renuka_repo;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class mouse_act {
+
+	public static void main(String[] args) 
+	{
+		WebDriver d=new ChromeDriver();
+	 d.manage().window().implicitlyWait(Duration.ofSeconds(30));
+		d.get("https://www.hyrtutorials.com/p/html-dropdown-elements-practice.html");
+		d.manage().window().maximize();
+		
+	}
+
+}

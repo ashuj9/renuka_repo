@@ -1,0 +1,23 @@
+package Playwright_Scripts;
+
+import java.nio.file.Paths;
+
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserType.LaunchOptions;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.Page.ScreenshotOptions;
+import com.microsoft.playwright.Playwright;
+
+public class screenshot {
+
+	public static void main(String[] args) {
+	Playwright p=Playwright.create();
+	Browser b=p.chromium().launch(new LaunchOptions());
+	Page pg=b.newPage();
+	pg.navigate("https://www.google.com");
+	pg.screenshot(new ScreenshotOptions().setPath( Paths.get("C:\\Users\\guggi\\OneDrive\\Pictures\\Screenshots.png")));
+pg.screenshot(new ScreenshotOptions().setPath( Paths.get("C:\\Users\\guggi\\OneDrive\\Pictures\\Screenshots.png"))).setFullPage(true);
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package Fb_tc;
+
+import org.openqa.selenium.By;
+
+public class Login extends Driver
+{
+	
+	By usrnam=By.xpath("//*[@id='email']");
+	
+	
+	
+	
+
+}
